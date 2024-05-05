@@ -12,5 +12,6 @@ body{
 .box{
     height: 300px;
     width: 300px;
-    background: #add000;	
+    background: #add000;
+	margin: auto;
 }
