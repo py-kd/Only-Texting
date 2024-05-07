@@ -13,16 +13,18 @@ body{
 h1{
     line-height: 1.2em;
     color: #fff;
-    text-shadow: 0 0 #0023ac, 0 1.2em transparent;
+    text-shadow: 0 0 #fff, 0 1.2em transparent;
     overflow: hidden;
     padding: 8px 20px;
     border-radius: 0.07em;
-    border: 0.05em solid #abcdef;
-    transition: all 0.8s;
+    border: 0.05em solid #2505f4;
+    transition: all 0.5s;
     background: #000;
 }
 h1:hover{
-    text-shadow: 0 -1.2em #0023ac, 0 0 #fff;
+    text-shadow: 0 -1.2em #fff, 0 0 #fff;
     color: transparent;
     background-color: #04a7ff;
+    transform: skew(-2deg);
+    box-shadow: 3px 2px 5px #000;
 }
