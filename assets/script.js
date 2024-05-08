@@ -1,30 +1,10 @@
-document.title="Drag & Drop Functionality"
+let controlArrow = document.getElementsByClassName("arrow");
+console.log(controlArrow);
 
-let items = document.getElementsByClassName("item");
-let rightBox = document.getElementById("right");
-let leftBox = document.getElementById("left");
+for (const arrow of controlArrow) {      
+      console.log(arrow);
 
-for (let item of items) {
-      item.addEventListener("dragstart", (e)=>{
-            let selected = e.target;
-            
-            rightBox.addEventListener("dragover", (e)=>{
-                  e.preventDefault();
-            });
-            
-            rightBox.addEventListener("drop", (e)=>{
-                  rightBox.appendChild(selected);
-                  selected=null;
-            });
-            
-            leftBox.addEventListener("dragover", (e)=>{
-                  e.preventDefault();
-            });
-            
-            leftBox.addEventListener("drop", (e)=>{
-                  leftBox.appendChild(selected);
-                  selected=null;
-            });
-
+      arrow.addEventListener("click", ()=> {
+            arrow.classList.toggle("arrowUp");
       });
 }
