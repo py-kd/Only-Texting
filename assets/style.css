@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    background-color: #000;
+    background-color: #fff;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,29 +12,37 @@ body {
     align-items: center;
 }
 
-.box {
-    height: 300px;
-    width: 400px;
-    
-    color: orange; 
-    background-color: aliceblue;   
-    font-size: 3rem;
-    font-weight: 900;
+.carausal{
+    height: 80vh;
+    width: 70vw;
+    border: 2px solid #ff0;
+    box-shadow: 2px 3px 5px #acd;
+    border-radius: 0.3em;
+    cursor: pointer;
+    background-image: url(backg.jpg);
+    background-size: 100% 100%;
+    animation: imgChanger 15s linear infinite;
+    transition: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border-radius: 0.2em;
-    transition: 0.5s;
-    resize: both;
-
-    text-shadow: 0 0 4px rgb(0, 30, 255), 
-    0 0 4px rgb(0, 30, 255), 
-    0 0 4px rgb(0, 30, 255), 
-    0 0 4px rgb(0, 30, 255), 
-    0 0 4px rgb(0, 30, 255), 
-    0 0 4px rgb(0, 30, 255),
-    0 0 4px rgb(0, 30, 255),
-    0 0 4px rgb(0, 30, 255);
+    backdrop-filter: blur(20px);
+}
+@keyframes imgChanger {
+    0%{
+        background-image: url(backg.jpg);
+    }
+    25%{
+       background-image: url(bg.jpg);
+    }
+    50%{
+        background-image: url(img.jpg);
+    }
+    75%{
+        background-image: url(white-img.jpg);
+    }
+    100%{
+        background-image: url(penshil.jpg);        
+    }
 }
