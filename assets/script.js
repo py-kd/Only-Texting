@@ -1,11 +1,6 @@
-console.log("A");
-setTimeout(() => {
-    console.log("B");  
-}, 0);
+let no = '70'
 
-Promise.resolve().then(() => {
-      console.log("C");
-});
-console.log("D");
+console.log(no);
+console.log(`${+no} Type is:: ${typeof +no}`);
 
-// Output:: A D C B
+// Note: + Operator can convert any String into the Number
