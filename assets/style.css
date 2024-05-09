@@ -11,8 +11,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-.container{
-    padding: 1em;
-    font-size: clamp(24px , 3vw, 40px);
-    /* font-size: clamp(min , val, max); */
-}
