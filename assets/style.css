@@ -10,4 +10,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 0;
+}
+
+input{
+    padding: 10px 20px;
+    border: 2.5px solid #a10;
+    border-radius: 2em;
+    color: crimson;
+    font-weight: 900;
+    text-transform: capitalize;
+    transition: all 0.7s ease-in-out;
+
+}
+input[placeholder]{
+    color: magenta;    
+}
+input::placeholder{
+    color: blue;
+}
+input[type="text"]:focus{
+    color: crimson;
+    border: 2.5px solid goldenrod;
+    width: 30em;    
+    background-color: #aac;
 }
