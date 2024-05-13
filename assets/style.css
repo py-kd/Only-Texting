@@ -12,52 +12,10 @@ body {
     align-items: center;
 }
 
-.btn-contaner{
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    background: yellow;
-    position: relative;
-    padding: 2px;
-    overflow: hidden;
-    border-radius: 5em;
-}
-.btn-contaner::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(100deg);
-    height: 100px;
-    width: 30px;
-    /* background: linear-gradient(#c20000, #08f46a, #d74ff5, #10ffcd); */
-    /* background: linear-gradient(#1aa055, #d74405); */
-    background: rgb(235, 105, 6);
-    animation: rotar 1s infinite ease;
-}
-.mybtn{
-    border-radius: 5em;
-    width: 100%;
-    height: 100%;
-    background: #24cbec;
-    color: #fff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 11;
-    transition: all 0.7s ease;
-    /* text-shadow: 1px 1px 0px #1b1098, -0.5px -0.5px 0px #24cbec; */
-}
-.mybtn:hover{
-    /* text-shadow: 0.5px 0.5px 0px #1b1098, -0.5px -0.5px 0px #eb7e09; */
-    text-shadow: 0.5px 0.5px 0px #121098, -0.5px -0.5px 0px #1b1098;
-}
-@keyframes rotar {
-    100%{
-        transform: translate(-50%, -50%) rotate(225deg);
-    }
+.box{
+    font-size: 10rem;
+    color: chartreuse;
+    transition: all 0.8s;
+    -webkit-text-stroke-color: #526310;
+    -webkit-text-stroke-width: 3px;
 }
