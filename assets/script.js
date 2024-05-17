@@ -5,6 +5,7 @@ let para = document.createElement("p");
 console.log(para);
 
 let val = 0;
+val = localStorage.getItem("counter");
 para.innerText = val;
 
 container.appendChild(para);
@@ -12,5 +13,6 @@ container.appendChild(para);
 
 setInterval(() => {
       val++;
+      localStorage.setItem("counter", val);
       para.innerText = val;
 }, 1000);
