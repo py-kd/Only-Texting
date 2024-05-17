@@ -1,18 +1,19 @@
-let container = document.querySelector(".container");
-console.log(container);
+let body = document.querySelector('body');
+console.log(body);
 
-let para = document.createElement("p");
-console.log(para);
+let div = document.createElement('div');
+div.classList.add('container');
+div.innerText = "Chaman";
+console.log(div);
 
-let val = 0;
-val = localStorage.getItem("counter");
-para.innerText = val;
+// body.appendChild(div);
+body.append(div);
 
-container.appendChild(para);
-// container.append(para);
-
-setInterval(() => {
-      val++;
-      localStorage.setItem("counter", val);
-      para.innerText = val;
-}, 1000);
+div.style.backgroundColor = "red";
+div.style.padding = "30px";
+div.style.borderRadius = "10px";
+div.style.color = "white";
+div.style.fontSize = "22px";
+div.style.minHeight = "30px";
+div.style.minWidth = "80px";
+div.style.overflow = "scroll";
