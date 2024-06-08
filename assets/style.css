@@ -3,39 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #fff;
-}
 
-section{
-    width: 100%;
+body{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: rgb(150, 98, 14);    
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
-}
-section h1{
-    font-size: 5em;
-    text-shadow: 5px 3px 5px rgba(0, 2, 10, 0.5);
-}
-section p{
-    font-size: 3em;
+    display: grid;
+    place-items: center;
+    background: #090305;
 }
 
-.section-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(backg.jpg);
-}
-.section-2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(bg.jpg);
-}
-.section-3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(img.jpg);
-}
-.section-4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(penshil.jpg);
+h1{
+    background: linear-gradient(3deg,rgb(7, 31, 241) 19%, #0bd2ff 33% ,#9ff544 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12rem;
 }
