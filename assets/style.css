@@ -12,8 +12,30 @@ body{
 }
 
 h1{
-    background: linear-gradient(3deg,rgb(7, 31, 241) 19%, #0bd2ff 33% ,#9ff544 50%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 12rem;
+    color: #fff;
+    font-size: 3.3em;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    position: absolute;
+    right: 0;
+    outline: 2px saddlebrown dotted;
+    padding: 50px 10px;
+    }
+
+h2{
+    color: #fff;
+    transform: rotate(-180deg);
+    font-size: 3.3em;
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 0;
+    outline: 2px saddlebrown dotted;
+    padding: 50px 10px;
+}
+
+h1:hover, h2:hover{
+    cursor: pointer;
+    color: red;
+    transform: rotate(-180deg) translateY(-20px);
+    transition: 1.2s ease-in-out;
 }
