@@ -7,12 +7,14 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(
+    background-image: 
+    linear-gradient(
         rgba(43, 177, 244, 0.702),
         rgba(253, 165, 41, 0.4),
         rgba(234, 249, 21, 0.4),
         rgba(247, 255, 2, 0.656),
         rgba(42, 247, 23, 0.552),
-        rgba(103, 58, 6, 0.895)), 
-    url(backg.jpg);
+        rgba(251, 239, 224, 0.189) 60%), 
+    url(penshil.jpg);
+    background-size: 100% 100%;
 }
