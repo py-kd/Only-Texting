@@ -1,20 +1,31 @@
-* {
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html , body{
+    height: 100%;
+    width: 100%;
+}
 
-.container{
-    width: 100vw;
+body{
     height: 100vh;
-    background-image: 
-    linear-gradient(
-        rgba(43, 177, 244, 0.702),
-        rgba(253, 165, 41, 0.4),
-        rgba(234, 249, 21, 0.4),
-        rgba(247, 255, 2, 0.656),
-        rgba(42, 247, 23, 0.552),
-        rgba(177, 101, 7, 0.596) 60%), 
-    url(white-img.jpg);
-    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: upper-alpha;
+}
+
+li{
+    font-size: 2em;
+}
+
+ul ul{
+    list-style-type: upper-roman;
+    padding-left: 50px;
+    color: rgb(255, 148, 8);
 }
