@@ -1,43 +1,88 @@
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html , body{
+    height: 100%;
+    width: 100%;
+}
 body{
     height: 100vh;
     width: 100%;
-    background: #aac;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.flex-container{
-    width: 80%;
-    height: auto;
+nav{
+    position: sticky;
+    top: 0%;
+    width: 100vw;
+    height: 50px;
     margin: 0 auto;
-    background: #310055;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    padding: 0 20px;
+    background: #08f0e1;
+    border-radius: 8px;
+
+    ul{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li{
+            color: #2309ed;
+            font-size: 1.6rem;
+            text-shadow: 1px 1px 1px rgb(101, 4, 192);
+        }
+    }
 }
 
-.flex-item{
-    width: 200px;
-    height: 150px;
-    background: #aac000;
-
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
-    color: crimson;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    text-transform: capitalize;
-    flex-shrink: 1;
+    
+
+    h1{
+        color: #fff;
+        font-size: 4.9rem;
+        transition: all 0.7s;
+    }
+    
+    &:hover{
+        text-shadow: 3px 4px 6px rgb(13, 13, 246);
+    }
+    &.container1{
+        background: linear-gradient(30deg,rgb(16, 32, 48, 0.5), rgb(170, 204, 221, 0.3)), url(backg.jpg);
+        background-attachment: fixed;
+    }
+    
+    &.container2{
+        background: linear-gradient(30deg,rgb(14, 122, 229, 0.7), rgb(239, 239, 116, 0.4)), url(bg.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    &.container3{
+        background: linear-gradient(30deg,rgb(238, 96, 231, 0.5), rgb(86, 189, 240, 0.4)), url(img.jpg);
+        background-attachment: fixed;
+    }
+    
+    &.container4{
+        background: linear-gradient(30deg,rgb(253, 152, 12, 0.6), rgb(3, 105, 156, 0.2)), url(penshil.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    
+    &.container5{
+        background: linear-gradient(30deg,rgba(2, 77, 17, 0.6), rgba(243, 243, 7, 0.476)), url(white-img.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
 }
