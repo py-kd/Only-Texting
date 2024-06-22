@@ -14,6 +14,9 @@ $(document).ready(function() {
             // animateOut: 'slideOutDown',
             // animateIn: 'zoomIn',
             // animateOut: 'rollOut',
+            video:true,
+            videoWidth: 500,
+            videoHeight: 500,
             responsive:{
                 0:{
                     items: 1
