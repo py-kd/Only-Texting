@@ -19,7 +19,7 @@ body{
 .item{
     width: 90%;
     height: 40vh;
-    background: #00c;
+    background: rgb(239, 79, 210);
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -41,23 +41,16 @@ body{
 .owl-prev {
     position: absolute;
     top: 50%; 
-    left: -30px; 
+    left: 50px; 
     transform: translateY(-50%);
 }
 
 .owl-next {
     position: absolute;
     top: 50%; 
-    right: -30px;
+    right: 50px;
     transform: translateY(-50%);
     border-radius: 50%;
-}
-
-.owl-prev, .owl-next{
-    top: 18px !important;
-}
-.owl-prev{
-    left: 95%;
 }
 
 .owl-prev, .owl-next {
@@ -69,9 +62,6 @@ body{
     background: rgba(115, 182, 250, 0.2) !important;
     border-radius: 50%;
     transition: 0.7s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .owl-prev:hover, 
@@ -83,4 +73,11 @@ body{
 .owl-carousel .owl-nav button.owl-prev {
     border: 2px solid rgb(3, 17, 172);
     border-radius: 60px;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
 }

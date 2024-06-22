@@ -5,15 +5,15 @@ $(document).ready(function() {
             loop: true,
             nav: true,
             // center: true,
-            stagePadding: 130,
+            // stagePadding: 130,
             rtl: false,
             autoplay: true,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
-            // animateOut: 'animate__slideInLeft',
+            // animateOut: 'slideInLeft',
             // animateOut: 'slideOutDown',
-            animateIn: 'flipOutY',
-            animateOut: 'backInUp',
+            // animateIn: 'zoomIn',
+            // animateOut: 'rollOut',
             responsive:{
                 0:{
                     items: 1
