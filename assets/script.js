@@ -1,42 +1,36 @@
-$(document).ready(function() {
-      $('.owl-carousel').owlCarousel({
-            items: 1,
-            margin: 10,
-            loop: true,
-            nav: true,
-            // center: true,
-            // stagePadding: 130,
-            rtl: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            // animateOut: 'slideInLeft',
-            // animateOut: 'slideOutDown',
-            // animateIn: 'zoomIn',
-            // animateOut: 'rollOut',
-            video:true,
-            videoWidth: 500,
-            videoHeight: 500,
-            responsive:{
-                0:{
-                    items: 1
-                },
-                600:{
-                    items: 1
-                },
-                1000:{
-                    items: 1
-                }
-            }
-        })
+const mylist = document.querySelector('.mylist');
+const listItem = document.querySelector('.item1');
 
-      var owl = $('.owl-carousel');
-      owl.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY>0) {
-                  owl.trigger('next.owl');
-            } else {
-                  owl.trigger('prev.owl');
-            }
-            e.preventDefault();
-      });
-});
+mylist.addEventListener('click', (e) => {
+      // console.log(`i am clicked`);
+      // console.log(e);
+      // console.log(e.timeStamp);
+      // console.log(e.bubbles);
+      // console.log(e.CAPTURING_PHASE);
+      // console.log(e.target);
+      // console.log(e.currentTarget);
+      // console.log(e.type);
+      // console.log(e.defaultPrevented);
+      // console.log(e.toElement);
+      // console.log(e.srcElement);      
+      // console.log(`CLIENT -> from left:: ${e.clientX} from top:: ${e.clientY}`);
+      // console.log(`SCREEN -> from left:: ${e.screenX} from top:: ${e.screenY}`);
+      // console.log(`PAGE -> from left:: ${e.pageX} from top:: ${e.pageY}`);
+      // console.log(`OFFSET -> from left:: ${e.offsetX} from top:: ${e.offsetY}`);
+      // console.log(`TILT -> from left:: ${e.tiltX} from top:: ${e.tiltY}`);
+      // console.log(`WINDOW -> from left:: ${e.tiltX} from top:: ${e.tiltY}`);
+
+      // console.log(mylist.attributes);
+      // console.log(mylist.attributes[0]);
+
+      console.log(`container clicked`);
+      e.stopPropagation();
+}, false);
+
+
+listItem.addEventListener('click',(e) => {
+      console.log(`item clicked`);
+      e.stopPropagation();
+      e.stopPropagation();
+}, true);
+

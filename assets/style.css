@@ -1,83 +1,10 @@
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul{
+      background: red;
+      padding: 30px;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel{
-    width: 70%;
-    height: 100vh;
-}
-
-.item{
-    width: 90%;
-    height: 40vh;
-    background: rgb(239, 79, 210);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px auto;
-}
-
-.item h4{
-    font-size: 5em;
-    color: antiquewhite;
-    text-align: center;
-}
-
-.owl-theme{
-    /* background: url(backg.jpg); */
-    background-size: cover;
-}
-
-.owl-prev {
-    position: absolute;
-    top: 50%; 
-    left: 50px; 
-    transform: translateY(-50%);
-}
-
-.owl-next {
-    position: absolute;
-    top: 50%; 
-    right: 50px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-}
-
-.owl-prev, .owl-next {
-    font-size: 50px !important;
-    padding: 0px !important;
-    width: 30px !important;
-    height: 50px !important;
-    line-height: 5px !important;
-    background: rgba(115, 182, 250, 0.2) !important;
-    border-radius: 50%;
-    transition: 0.7s;
-}
-
-.owl-prev:hover, 
-.owl-next:hover {
-    background: #3030df !important;
-}
-
-.owl-carousel .owl-nav button.owl-next, 
-.owl-carousel .owl-nav button.owl-prev {
-    border: 2px solid rgb(3, 17, 172);
-    border-radius: 60px;
-}
-
-.owl-dots {
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-    text-align: center;
+li{
+      color: #fff;
+      background: yellowgreen;
+      margin: 10px;
 }
